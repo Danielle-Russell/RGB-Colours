@@ -1,11 +1,10 @@
 p {
-  width: 25vw;
+  width: 34vw;
   margin: 0px;
 }
 
-
 .App {
- display: flex;
+  display: flex;
   margin: 0px;
   width: 100vw;
 }

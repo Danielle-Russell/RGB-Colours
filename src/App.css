@@ -1,4 +1,11 @@
 p {
-  width: 20px;
-  height: 20px;
+  width: 25vw;
+  margin: 0px;
+}
+
+
+.App {
+ display: flex;
+  margin: 0px;
+  width: 100vw;
 }

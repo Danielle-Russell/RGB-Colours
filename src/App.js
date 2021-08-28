@@ -28,7 +28,7 @@ class App extends React.Component {
     var currIndex = array.length,
       randomIndex;
 
-    while (currIndex != 0) {
+    while (currIndex !== 0) {
       randomIndex = Math.floor(Math.random() * currIndex);
       currIndex--;
 

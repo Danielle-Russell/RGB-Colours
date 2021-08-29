@@ -42,35 +42,15 @@ class App extends React.Component {
   };
 
   render() {
+  
     var colors = this.state.colors;
-    var half = Math.ceil(colors.length / 2);
-    var q1 = colors.slice(0, colors.length / 4);
-    var q2 = colors.slice(colors.length / 4, half);
-    var q3 = colors.slice(half, colors.length);
-
+    
     return (
       <div className="App">
-        <div>
-          {this.shuffleColors(q1).map((color) => (
-            <p key={color} style={{ backgroundColor: color }}>
-              .
-            </p>
-          ))}
-        </div>
-        <div>
-          {this.shuffleColors(q2).map((color) => (
-            <p key={color} style={{ backgroundColor: color }}>
-              .
-            </p>
-          ))}
-        </div>
-        <div>
-          {this.shuffleColors(q3).map((color) => (
-            <p key={color} style={{ backgroundColor: color }}>
-              .
-            </p>
-          ))}
-        </div>
+          {this.shuffleColors(colors).map(color =>
+            <p key={color} style={{ backgroundColor: color }}> . </p>
+          )
+          }
       </div>
     );
   }
